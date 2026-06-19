@@ -90,6 +90,18 @@ A stochastic model treating churn as a sequence of states, where the next state 
 
 <br>
 
+## 📂 Dataset
+
+The project uses the [Telco Customer Churn dataset](wa_fn-usec_-telco-customer-churn__1_.csv) — a public sample dataset describing a fictional telecom provider's customer base.
+
+- **Rows:** 7,043 customers · **Columns:** 21 attributes
+- **Target:** `Churn` — whether the customer left within the last month (Yes / No)
+- **Demographics:** `gender`, `SeniorCitizen`, `Partner`, `Dependents`
+- **Account info:** `tenure`, `Contract`, `PaperlessBilling`, `PaymentMethod`, `MonthlyCharges`, `TotalCharges`
+- **Services:** `PhoneService`, `MultipleLines`, `InternetService`, `OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV`, `StreamingMovies`
+
+<br>
+
 ## 🚀 Getting Started
 
 ```bash
