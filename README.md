@@ -27,7 +27,7 @@ The work follows the industry-standard **CRISP-DM** process — from business un
 
 <br>
 
-## 🏆 Key Results
+## 🏆 Key Highlights
 
 | Metric                               | Result                                                                                               |
 | :----------------------------------- | :--------------------------------------------------------------------------------------------------- |
@@ -41,7 +41,20 @@ The work follows the industry-standard **CRISP-DM** process — from business un
 
 <br>
 
-## ✨ Features & Functionality
+## 🛠️ Tech Stack
+
+| Category             | Tools                    |
+| :------------------- | :----------------------- |
+| **Language**         | Python 3.10              |
+| **Environment**      | Jupyter Notebook         |
+| **Data**             | pandas, NumPy, itertools |
+| **Visualization**    | Matplotlib, Seaborn      |
+| **Machine Learning** | scikit-learn             |
+| **Boosting**         | XGBoost                  |
+
+<br>
+
+## ✨ Features & Methodology
 
 ### 🧹 Data Preparation & Cleaning
 
@@ -74,19 +87,6 @@ Reusable training functions systematically train models on **every unique combin
 ### 🔗 Markov Chain Analysis
 
 A stochastic model treating churn as a sequence of states, where the next state depends only on the current one.
-
-<br>
-
-## 🛠️ Tech Stack
-
-| Category             | Tools                    |
-| :------------------- | :----------------------- |
-| **Language**         | Python 3.10              |
-| **Environment**      | Jupyter Notebook         |
-| **Data**             | pandas, NumPy, itertools |
-| **Visualization**    | Matplotlib, Seaborn      |
-| **Machine Learning** | scikit-learn             |
-| **Boosting**         | XGBoost                  |
 
 <br>
 
@@ -138,6 +138,6 @@ jupyter notebook Churn_Analysis.ipynb
 
 <div align="center">
 
-⭐ If you found this project useful, consider giving it a star!
+⭐ _If you found this project helpful or interesting, consider giving it a star!_ ⭐
 
 </div>
