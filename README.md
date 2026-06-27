@@ -29,13 +29,11 @@ The work follows the industry-standard **CRISP-DM** process — from business un
 
 ## 🏆 Key Highlights
 
-| Metric                               | Result                                                                                               |
-| :----------------------------------- | :--------------------------------------------------------------------------------------------------- |
-| 🎯 **Best prediction accuracy**      | **~81%** (Logistic Regression / XGBoost)                                                             |
-| 🔑 **Top churn drivers**             | Month-to-Month contract · No Online Security · No Tech Support                                       |
-| 🤖 **Models trained & compared**     | 7 (Logistic Regression, SVM, kNN, Naïve Bayes, Random Forest, AdaBoost, Gradient Boosting / XGBoost) |
-| 🔬 **Feature combinations searched** | Every unique combination of **1 → 18 features**                                                      |
-| 📊 **Dataset**                       | 7,043 customers · 21 features                                                                        |
+- 🎯 **Best prediction accuracy** — **~81%** (Logistic Regression / XGBoost).
+- 🔑 **Top churn drivers** — Month-to-Month contract · No Online Security · No Tech Support.
+- 🤖 **Models trained & compared** — 7 (Logistic Regression, SVM, kNN, Naïve Bayes, Random Forest, AdaBoost, Gradient Boosting / XGBoost).
+- 🔬 **Feature combinations searched** — every unique combination of **1 → 18 features**.
+- 📊 **Dataset** — 7,043 customers · 21 features.
 
 **Bottom line:** customers on month-to-month contracts, with short tenures and higher monthly charges, and without security/support add-ons are the most likely to churn — and a tuned model flags them with ~81% accuracy.
 
@@ -43,7 +41,7 @@ The work follows the industry-standard **CRISP-DM** process — from business un
 
 ## 🛠️ Tech Stack
 
-| Category             | Tools                    |
+| Layer                | Technologies             |
 | :------------------- | :----------------------- |
 | **Language**         | Python 3.10              |
 | **Environment**      | Jupyter Notebook         |
@@ -58,26 +56,26 @@ The work follows the industry-standard **CRISP-DM** process — from business un
 
 ### 🧹 Data Preparation & Cleaning
 
-- Type correction (`TotalCharges` object → float) and binary encoding of the `Churn` target
-- Missing-value detection & removal, redundant-data detection, descriptive statistics
+- Type correction (`TotalCharges` object → float) and binary encoding of the `Churn` target.
+- Missing-value detection & removal, redundant-data detection, descriptive statistics.
 
 ### 📈 Exploratory & Statistical Analysis
 
-- **Variance & standard deviation** analysis to understand data spread
-- **Correlation analysis** focused on churn drivers
-- **Histogram analysis** of every variable, including churn-segmented comparisons and skewness classification
-- **Box-plot analysis** of tenure and charges against churn
+- **Variance & standard deviation** analysis to understand data spread.
+- **Correlation analysis** focused on churn drivers.
+- **Histogram analysis** of every variable, including churn-segmented comparisons and skewness classification.
+- **Box-plot analysis** of tenure and charges against churn.
 
 ### 🤖 Predictive Modelling
 
 Seven classifiers trained, tuned, and benchmarked — each reporting accuracy, correct/incorrect counts, confusion matrices, and feature-importance insights:
 
-| Family          | Models                                                                           |
-| :-------------- | :------------------------------------------------------------------------------- |
-| Linear          | Logistic Regression                                                              |
-| Distance-based  | k-Nearest Neighbors _(k-fold CV tuned)_                                          |
-| Probabilistic   | Naïve Bayes (Bernoulli)                                                          |
-| Kernel          | Support Vector Machine                                                           |
+| Family          | Models                                                                       |
+| :-------------- | :--------------------------------------------------------------------------- |
+| Linear          | Logistic Regression                                                          |
+| Distance-based  | k-Nearest Neighbors _(k-fold CV tuned)_                                      |
+| Probabilistic   | Naïve Bayes (Bernoulli)                                                      |
+| Kernel          | Support Vector Machine                                                       |
 | Tree / Ensemble | Random Forest, AdaBoost, Gradient Boosting, XGBoost _(`GridSearchCV` tuned)_ |
 
 ### 🔍 Exhaustive Feature-Combination Search
@@ -126,23 +124,23 @@ jupyter notebook Churn_Analysis.ipynb
 
 ## 📚 What I Learned
 
-- The **CRISP-DM** workflow end-to-end — from framing a business question to interpreting model results
-- Cleaning and preparing a real-world, mixed-type dataset (type coercion, missing values, encoding)
-- Translating statistics (variance, correlation, skewness) into **business insight**, not just numbers
-- Choosing the right visualization for categorical vs. numerical data
-- The strengths, weaknesses, and assumptions across **linear, distance-based, probabilistic, tree-based, and boosting** classifiers
-- **Hyperparameter tuning & cross-validation** with `GridSearchCV` and k-fold CV
-- That **feature selection matters** — an exhaustive combination search can beat using every variable at once
-- Modelling churn as a stochastic process with **Markov chains**
+- The **CRISP-DM** workflow end-to-end — from framing a business question to interpreting model results.
+- Cleaning and preparing a real-world, mixed-type dataset (type coercion, missing values, encoding).
+- Translating statistics (variance, correlation, skewness) into **business insight**, not just numbers.
+- Choosing the right visualization for categorical vs. numerical data.
+- The strengths, weaknesses, and assumptions across **linear, distance-based, probabilistic, tree-based, and boosting** classifiers.
+- **Hyperparameter tuning & cross-validation** with `GridSearchCV` and k-fold CV.
+- That **feature selection matters** — an exhaustive combination search can beat using every variable at once.
+- Modelling churn as a stochastic process with **Markov chains**.
 
 <br>
 
 ## 🔭 Future Improvements
 
-- ⚖️ **Address class imbalance** — apply class weighting or resampling to improve recall on the minority (churn) class
-- 📐 **Use richer metrics** — precision, recall, F1, and ROC-AUC are more meaningful than accuracy for imbalanced data
-- 🧱 **Modularize** — split data prep, EDA, and modelling into reusable `.py` files with a clear pipeline
-- 💾 **Persist trained models** with `joblib`/`pickle` instead of retraining each run
+- ⚖️ **Address class imbalance** — apply class weighting or resampling to improve recall on the minority (churn) class.
+- 📐 **Use richer metrics** — precision, recall, F1, and ROC-AUC are more meaningful than accuracy for imbalanced data.
+- 🧱 **Modularize** — split data prep, EDA, and modelling into reusable `.py` files with a clear pipeline.
+- 💾 **Persist trained models** with `joblib`/`pickle` instead of retraining each run.
 
 <br>
 
