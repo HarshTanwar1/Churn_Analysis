@@ -127,7 +127,7 @@ git clone https://github.com/HarshTanwar1/Churn_Analysis.git
 cd Churn_Analysis
 ```
 
-### 2. (Recommended) Create and activate a virtual environment
+### 2. Create and activate a virtual environment _(recommended)_
 
 ```bash
 python3 -m venv venv
