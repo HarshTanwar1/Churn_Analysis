@@ -90,31 +90,59 @@ A stochastic model treating churn as a sequence of states, where the next state 
 
 ## 📂 Dataset
 
-The project uses the [Telco Customer Churn dataset](wa_fn-usec_-telco-customer-churn__1_.csv) — a public sample dataset describing a fictional telecom provider's customer base.
+The project uses the [Telco Customer Churn dataset](wa_fn-usec_-telco-customer-churn__1_.csv) — a public sample dataset describing a fictional telecom provider's customer base. It holds **7,043 customers across 21 attributes** (one row per customer), mixing categorical and numerical features.
 
-- **Rows:** 7,043 customers · **Columns:** 21 attributes
-- **Target:** `Churn` — whether the customer left within the last month (Yes / No)
-- **Demographics:** `gender`, `SeniorCitizen`, `Partner`, `Dependents`
-- **Account info:** `tenure`, `Contract`, `PaperlessBilling`, `PaymentMethod`, `MonthlyCharges`, `TotalCharges`
-- **Services:** `PhoneService`, `MultipleLines`, `InternetService`, `OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV`, `StreamingMovies`
+| Feature            | Description                                                                        |
+| :----------------- | :--------------------------------------------------------------------------------- |
+| `customerID`       | Unique identifier for each customer                                                |
+| `gender`           | Whether the customer is Male or Female                                             |
+| `SeniorCitizen`    | Whether the customer is a senior citizen (1) or not (0)                            |
+| `Partner`          | Whether the customer has a partner (Yes / No)                                      |
+| `Dependents`       | Whether the customer has dependents (Yes / No)                                     |
+| `tenure`           | Number of months the customer has stayed with the company                          |
+| `PhoneService`     | Whether the customer has phone service (Yes / No)                                  |
+| `MultipleLines`    | Whether the customer has multiple phone lines                                      |
+| `InternetService`  | Customer's internet provider (DSL / Fiber optic / No)                              |
+| `OnlineSecurity`   | Whether the customer has the online security add-on                                |
+| `OnlineBackup`     | Whether the customer has the online backup add-on                                  |
+| `DeviceProtection` | Whether the customer has the device protection add-on                              |
+| `TechSupport`      | Whether the customer has the tech support add-on                                   |
+| `StreamingTV`      | Whether the customer has streaming TV                                              |
+| `StreamingMovies`  | Whether the customer has streaming movies                                          |
+| `Contract`         | Contract term (Month-to-month / One year / Two year)                               |
+| `PaperlessBilling` | Whether the customer uses paperless billing (Yes / No)                             |
+| `PaymentMethod`    | How the customer pays (Electronic check, Mailed check, Bank transfer, Credit card) |
+| `MonthlyCharges`   | Amount charged to the customer each month                                          |
+| `TotalCharges`     | Total amount charged over the customer's tenure                                    |
+| `Churn`            | **Target** — whether the customer left within the last month (Yes / No)            |
 
 <br>
 
 ## 🚀 Getting Started
 
+### 1. Clone the repository
+
 ```bash
-# 1. Clone the repository
 git clone https://github.com/HarshTanwar1/Churn_Analysis.git
 cd Churn_Analysis
+```
 
-# 2. (Recommended) Create and activate a virtual environment
+### 2. (Recommended) Create and activate a virtual environment
+
+```bash
 python3 -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
+```
 
-# 3. Install dependencies
+### 3. Install dependencies
+
+```bash
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost jupyter
+```
 
-# 4. Launch the notebook
+### 4. Launch the notebook
+
+```bash
 jupyter notebook Churn_Analysis.ipynb
 ```
 
