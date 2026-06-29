@@ -146,7 +146,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost jupyter
 jupyter notebook Churn_Analysis.ipynb
 ```
 
-> 💡 Keep `wa_fn-usec_-telco-customer-churn__1_.csv` in the same directory as the notebook — it's loaded via a relative path. Then run `Kernel → Restart & Run All` to reproduce the full analysis
+> 💡 Keep [`wa_fn-usec_-telco-customer-churn__1_.csv`](wa_fn-usec_-telco-customer-churn__1_.csv) in the same directory as the notebook — it's loaded via a relative path. Then run `Kernel → Restart & Run All` to reproduce the full analysis
 
 <br>
 
